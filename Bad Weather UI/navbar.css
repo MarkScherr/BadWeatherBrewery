@@ -1,0 +1,22 @@
+.container-fluid {
+	background-color: #000000;
+}
+.navbar {
+	position: relative;
+	color: #fff;
+}
+.brand {
+	position: absolute;
+	left: 50%;
+	margin-left: -50px !important;  /* 50% of your logo width */
+	display: block;
+}
+.brand, img {
+	width: 50px;
+}
+.navbar-nav li a {
+ line-height: 50px;
+}
+.active {
+	background-color: #333;
+}

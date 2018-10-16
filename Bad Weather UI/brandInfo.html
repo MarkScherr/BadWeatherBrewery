@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+		<title>Bad Weather Reporting</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+			   
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+		<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+		<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+		<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+
+		<link href="datepicker.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="navbar.css">
+		<link rel="stylesheet" href="brandInfo.css">
+    </head>
+    <body>
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="index.html"><img src="img/BW.png" style="width:50px;"></a>
+			</div>
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="#">Brand Information</a></li>
+			  <li><a href="#">Page 3</a></li>
+			  <li><a href="upload.html">Upload Report</a></li>
+			</ul>
+		  </div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">    
+					<div class="dropdown">
+					  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="beerButton">Beer
+					  <span class="caret"></span></button>
+					  <ul class="dropdown-menu" id="beerMenu">
+					  </ul>
+					</div>
+					<div id="beerSelected"></div>
+					<br>
+					<div class="form-group">
+						<label for="datepicker">From:</label>
+						<input type="text" class="form-control" id="datepicker"/>
+					</div>			
+					<div class="form-group">
+						<label for="toDatepicker">To:</label>
+						<input type="text" class="form-control" id="toDatepicker"/>
+					</div>		
+					<button type="button" class="btn btn-primary" id="submitButton">Submit</button>
+					<h1>Sales Per City</h1><div id="salesPerCityDiv"></div>
+				</div>
+				
+				<div class="col-md-4 align-right">
+					<div id="map" style="width: 600px; height: 400px; background: grey"></div>
+					<h1>Sales Per Store</h1>
+					<div id="salesPerStoreDiv"></div>
+				</div>
+				
+			</div>
+				
+
+		</div>
+		<div class="container">
+			<div class="row">
+			</div>
+		</div>
+					
+		
+		
+   </body>
+   
+	<script src="js/brandInfo.js"></script>
+</html>

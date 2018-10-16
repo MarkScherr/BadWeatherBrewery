@@ -1,0 +1,9 @@
+.form-group {
+	width: 30%;
+	
+}
+
+#beerButton, #submitButton {
+	background-color: #000000;
+	border-color: #00e600;
+}

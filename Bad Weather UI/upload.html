@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+		<title>Bad Weather Uploading</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+			   
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+        <script src="http://malsup.github.com/jquery.form.js"></script>
+		<link rel="stylesheet" href="navbar.css">
+    </head>
+    <body>
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="index.html"><img src="img/BW.png"></a>
+			</div>
+			<ul class="nav navbar-nav">
+			  <li><a href="brandInfo.html">Brand Information</a></li>
+			  <li><a href="#">Page 3</a></li>
+			  <li class="active"><a href="#">Upload Report</a></li>
+			</ul>
+		  </div>
+		</nav>
+        <form method="POST" enctype="multipart/form-data" id="fileUploadForm">
+			<input type="file" name="file"/><br/><br/>
+			<input type="submit" value="Submit" id="btnSubmit"/>
+		</form>
+
+		<h1>Result</h1>
+		<pre>
+			<span id="result"></span>
+		</pre>
+        <hr/>
+		
+
+		
+   </body>
+   
+	<script src="js/upload.js"></script>
+</html>
